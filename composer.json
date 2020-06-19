@@ -1,0 +1,14 @@
+{
+    "name": "image/optimizer",
+    "type": "package",
+    "license": "MIT",
+    "require": {
+        "imagine/imagine": "^1.2.3",
+        "vlucas/phpdotenv": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ImageOptimizer\\": "src/"
+        }
+    }
+}
