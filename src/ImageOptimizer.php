@@ -4,14 +4,13 @@ declare(strict_types=1);
 
 namespace ImageOptimizer;
 
-use Imagine\Image\{Box, ImageInterface};
 use ImageOptimizer\Exception\ImageNotFoundException;
 use ImageOptimizer\Exception\DirectoryNotFoundException;
 
 class ImageOptimizer
 {
     /**
-     * @var ImagineDriver $imagine
+     * @var DriverInterface $imagine
      */
     protected $driver;
 
@@ -20,7 +19,7 @@ class ImageOptimizer
      */
     protected $appPath;
 
-    public function __construct(ImagineDriver $driver, string $resizedFolder, string $appPath)
+    public function __construct(DriverInterface $driver, string $resizedFolder, string $appPath)
     {
         $this->driver = $driver;
         $this->resizedFolder = $resizedFolder;
