@@ -1,5 +1,5 @@
 {
-    "name": "zebrains/optimizer",
+    "name": "zebrains/imageoptimizer",
     "type": "package",
     "license": "MIT",
     "require": {
